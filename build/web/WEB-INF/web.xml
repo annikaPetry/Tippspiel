@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                              http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!--Verwendete Servlets-->
+    <servlet>
+        <servlet-name>Anmelden</servlet-name>
+        <servlet-class>servlets.Anmelden.Anmelden</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Benutzermenue</servlet-name>
+        <servlet-class>servlets.Benutzer.Benutzermenue</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Managermenue</servlet-name>
+        <servlet-class>servlets.Manager.Managermenue</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Turniermenue</servlet-name>
+        <servlet-class>servlets.Manager.Turniermenue</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Mannschaftsmenue</servlet-name>
+        <servlet-class>servlets.Manager.Mannschaftsmenue</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Spielmenue</servlet-name>
+        <servlet-class>servlets.Manager.Spielmenue</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Tippmenue</servlet-name>
+        <servlet-class>servlets.Benutzer.Tippmenue</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Punktemenue</servlet-name>
+        <servlet-class>servlets.Benutzer.Punktemenue</servlet-class>
+    </servlet>
+    <!--Verwendete URLs fuer das Servlet: Anmelden-->
+    <servlet-mapping>
+        <servlet-name>Anmelden</servlet-name>
+        <url-pattern>/Anmelden</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Anmelden</servlet-name>
+        <url-pattern>/anmelden</url-pattern>
+    </servlet-mapping>
+    <!--Verwendete URLs fuer das Servlet: Manager-->
+    <servlet-mapping>
+        <servlet-name>Managermenue</servlet-name>
+        <url-pattern>/Managermenue</url-pattern>
+    </servlet-mapping>
+    <!--Verwendete URLs fuer das Servlet: Turniermenue-->
+    <servlet-mapping>
+        <servlet-name>Turniermenue</servlet-name>
+        <url-pattern>/Turniermenue</url-pattern>
+    </servlet-mapping>
+    <!--Verwendete URLs fuer das Servlet: Mannschaftsmenue-->
+    <servlet-mapping>
+        <servlet-name>Mannschaftsmenue</servlet-name>
+        <url-pattern>/Mannschaftsmenue</url-pattern>
+    </servlet-mapping>
+    <!--Verwendete URLs fuer das Servlet: Spielmenue-->
+    <servlet-mapping>
+        <servlet-name>Spielmenue</servlet-name>
+        <url-pattern>/Spielmenue</url-pattern>
+    </servlet-mapping>
+    <!--Verwendete URLs fuer das Servlet: Benutzer-->
+    <servlet-mapping>
+        <servlet-name>Benutzermenue</servlet-name>
+        <url-pattern>/Benutzermenue</url-pattern>
+    </servlet-mapping>
+    <!--Verwendete URLs fuer das Servlet: Tippmenue-->
+    <servlet-mapping>
+        <servlet-name>Tippmenue</servlet-name>
+        <url-pattern>/Tippmenue</url-pattern>
+    </servlet-mapping>
+    <!--Verwendete URLs fuer das Servlet: Punktemenue-->
+    <servlet-mapping>
+        <servlet-name>Punktemenue</servlet-name>
+        <url-pattern>/Punktemenue</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
